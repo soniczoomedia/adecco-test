@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adecco Test</title>
+<link href="TestAssets/styles/TestStyle.css" rel="stylesheet" type="text/css">
+<link href="TestAssets/styles/TestFormStyle.css" rel="stylesheet" type="text/css">
+<link href="https://resources-02.adeccogroup.com/bundles/194DFC8E8D27475BBDFD5DCE26FEB2B1_css?v=9BOHUamWLhKUxhbv8-ZX7ocuNoCMIredvZbCtZOP1co1" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="mainwrapper">
+  <header> 
+    <nav> 
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" class="current" title="Link">Overview</a> 
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" title="Link">What We Do</a>
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" title="Link">Industries</a>
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" title="Link">Global Delivery Centers</a>
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" title="Link">Why Modis</a>
+	<a href="http://www.szmdev.co.uk/adecco/adecco-test.html" title="Link">Salary Guide</a>
+	</nav>
+  </header>
+  <div id="content">
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu DESKTOP -->
+<div class="mobnav">
+	
+<!-- Navigation links (hidden by default) -->
+<div id="myLinks">
+
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">Overview</a>
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">What We Do</a>
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">Industries</a>
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">Global Delivery Centers</a>
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">Why Modis</a>
+<a href="http://www.szmdev.co.uk/adecco/adecco-test.html">Salary Guide</a>
+
+</div>
+
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	
+</div>		
+     
+</div>
+
+
+<section id="mainContent"> 
+<!--****    Form goes here    ****************************************************************************-->
+
+
+<h1>Connect with us.</h1>
+<h3>Let us connect you to the people who can help you best</h3>
+<h2>CONTACT US</h2>
+<form id="testadeccoform" name="testadeccoform" method="post" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+	
+	
+<label for="full-name"><div class="testformlabel">Full name *</div></label>
+<input name="full-name" type="text" required="required" class="testformbox" id="full-name" autocomplete="on">
+
+<label for="email"><div class="testformlabel">Email address *</div></label>
+<input name="email" type="email" required="required" class="testformbox" id="email" autocomplete="on">
+		  
+<label for="tel"><div class="testformlabel">Phone</div></label> 
+<input name="tel" type="tel" class="testformbox" id="tel" autocomplete="on">
+		  
+<label for="title"><div class="testformlabel">Title *</div></label>
+<input name="title" type="text" required="required" class="testformbox" id="title" autocomplete="on">
+		  
+<label for="company"><div class="testformlabel">Company *</div></label>
+<input name="company" type="text" required="required" class="testformbox" id="company" autocomplete="on">
+		  
+<label for="location"><div class="testformlabel">Preferred Location *</div></label>
+<select name="location" required="required" class="testformselect" id="location">
+  <option value="Arizona-Modis Mesa">Arizona-Modis Mesa</option>
+  <option value="Location 2">Location 2</option>
+  <option value="Location 3">Location 3</option>
+  <option value="Location 4">Location 4</option>
+</select>
+
+<label for="qc"><div class="testformlabel">Questions or Comments</div></label>
+<textarea name="qc" id="qc" class="testformbox"></textarea>	
+	
+<label class="container">
+  <input type="checkbox" name="agree" value="check" id="agree">
+  <span class="checkmark"></span><div style="margin-left: 20px; font-size: 14px; font-weight: 400; padding-top: 4px; letter-spacing: 0.2px;">I have read and agree with the <a href="#">terms of use</a>, <a href="#">privacy</a> and <a href="#">cookie policy</a>. *</div>
+</label>
+	
+<button class="button" type="submit">Submit</button>
+	  
+</form>
+      
+<p style="margin-top: 20px; font-size: 24px; font-weight: 400; color: #111; letter-spacing: 1px;">877.MODISIT or 877.663.4748</p>
+</section>
+
+
+<footer> 
+
+      <article>
+        <h3>U.S. Corporate Headquarters</h3>
+        <p>10151 Deerwood Park Boulevard<br>Building 200, Suite 400<br>Jacksonville, Florida 32256<br>Phone: 904.360.2300<br>Fax: 904.306.2110<br><a href="mailto:info@modis.com">info@modis.com</a></p>
+      </article>
+      <article>
+        <h3>Canada Corporate Headquarters</h3>
+        <p>10 Bay Street, 7th Floor<br>Toronto, Ontario<br>M5J 2R8<br>Phone: 416.367.2020<br>Toll Free: 800.842.5907<br>Fax: 416.366.2001<br><a href="mailto:toronto@modis.com">toronto@modis.com</a></p>
+      </article>
+    </footer>
+  </div>
+  <div id="footerbar"><!-- Small footerbar at the bottom --></div>
+</div>
+</body>
+</html>
