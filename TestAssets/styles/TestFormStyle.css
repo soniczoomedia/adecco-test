@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+.testformbox {
+	width: 100%;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #333;
+	color: #262626;
+	font-family: arial;
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 20px;
+	margin-left: -5px;
+		
+}
+
+.testformselect {
+  width: 100%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #333;
+  color: #262626;
+  font-family: arial;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+    
+}
+
+.testformselect::after {
+     content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #939598;
+    position: absolute;
+    right: 15px;
+    top: 34px;
+
+  }
+
+.testformlabel {
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+
+.button {
+    text-align: left;
+    min-width: 244px;
+    width: auto;
+    max-width: 100%;
+    max-width: calc(100% - 20px);
+    background: #ffb81c;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ffb81c;
+        border-right-color: rgb(255, 184, 28);
+        border-right-style: solid;
+        border-right-width: 1px;
+    border-right: 0;
+    padding: 25px 25px 25px 18px;
+    font-family: arial !important;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0px;    
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    color: #262626;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: background .5s linear,border-color .5s ease-in-out,padding-left .5s ease-in-out,color .5s linear;
+    margin-top: 40px;
+}
+
+.button::before {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    right: 4px;
+    top: 50%;
+    margin-top: -5px;
+    transition: right .2s ease-in-out;
+}
+
+.button::after {
+    border: 1px solid #ffb81c;
+        border-bottom-color: rgb(255, 184, 28);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(255, 184, 28);
+        border-left-style: solid;
+        border-left-width: 1px;
+    border-left: 0;
+    border-bottom: 0;
+    top: -1px;
+    right: -1px;
+    bottom: 0;
+    width: 40px;
+    background: #ffb81c;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    transform: skew(-25deg);
+    z-index: -1;
+    transition: background .5s linear,border-color .5s linear;
+}
+
+.button::after, .button::before {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+ /* Customize the checkbox (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #E6E3E3;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 5px;
+  height: 15px;
+  border: solid #333;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+
+
+
+
