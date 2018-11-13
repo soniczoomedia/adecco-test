@@ -181,7 +181,7 @@ footer article {
 	color: rgba(146,146,146,1.00);
 }
 
-footer article h3 {
+.articletitle {
 text-align: left;
 font-family: arial !important;
 font-style: normal;
@@ -288,7 +288,9 @@ footer article {
 
 @media screen and (max-width:822px) {
 
-footer article h3 {font-size: 16x !important;}
+.articletitle {
+font-size: 16px !important;
+}
 
 }
 
@@ -311,4 +313,17 @@ footer article {
 	/* Each foter article */
 	width: 100%;
 }
+
+h1 {
+	font-size: 50px !important;
+}
+
+h2 {
+	font-size: 20px !important;
+}
+
+h3 {
+	font-size: 14px !important;
+}
+
 }
