@@ -140,7 +140,7 @@ h1 {
 	/* Styling for main headings */
 	color: rgba(146,146,146,1.00);
 	font-family: ResoLight,sans-serif;
-	font-size: 48px !important;
+	font-size: 55px !important;
 	font-weight: 600 !important;
 	margin-left: -5px !important;
 }
@@ -161,7 +161,7 @@ h3 {
 	font-style: normal;
 	font-weight: normal;
 	color: #666 !important;
-	font-size: 16px !important;
+	font-size: 18px !important;
 }
 
 
